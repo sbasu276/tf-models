@@ -64,7 +64,7 @@ message InputReader {
   // to a small constant and increment linearly until the improvements become
   // marginal or you exceed your cpu memory budget. Setting this to -1,
   // automatically tunes this value for you.
-  optional int32 num_prefetch_batches = 20 [default=2];
+  optional int32 num_prefetch_batches = -1 [default=2];
 
   // Maximum number of records to keep in reader queue.
   optional uint32 queue_capacity = 3 [default=2000, deprecated=true];

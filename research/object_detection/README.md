@@ -1,5 +1,11 @@
 
 # Tensorflow Object Detection API
+
+## Note: This repo fixes the following bugs:
+### 1. inference/infer_detections (load bytes for inference graph), 
+### 2. metrics/offline_eval_map_corloc (config loading from multiple files), 
+### 3. metrics/tf_example_parser (string parser)
+
 Creating accurate machine learning models capable of localizing and identifying
 multiple objects in a single image remains a core challenge in computer vision.
 The TensorFlow Object Detection API is an open source framework built on top of
